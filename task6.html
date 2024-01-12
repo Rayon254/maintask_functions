@@ -11,41 +11,34 @@
 
     <script>
 
-
-        function input_password(password) {
-
-
-            if (password == "admin@123") {
-                password = "Access Granted";
-
-            } else {
-                password = "Incorrect password";
-
-            }
-            return password
-
-        }
-
-
-        let password = prompt("enter password:");
-        let pass_word = input_password(password)
-        console.log(pass_word)
+    
 
 
 
-        function input_attempts(password) {
-            for (let i = 0; i < 4; i++) {
+            let password = prompt("enter password:");
+            let pass_word = input_password(password);
+            console.log(pass_word);
 
+            function input_attempts(password) {
+                let attempt = 0;
+                for (let i = 0; i < 4; i++) {
+                    if (password == "admin@123") {
+                        password = "Access Granted";
+
+                    } else {
+                        password = "Incorrect password";
+                    }
+                    return password
+                }
                 if (attempt > 4) {
                     attempt = "Blocked"
                 }
                 return attempt
             }
-        }
 
-        let attempt = 0;
-        let attempts = input_attempts(password)
-        console.log(attempts)
+
+            let attempts = input_attempts(password);
+            console.log(attempts);
 
     </script>
 

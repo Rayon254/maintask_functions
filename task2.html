@@ -11,23 +11,31 @@
 
     <script>
         function even_odd(number) {
-            
+
             if (number % 2 == 0) {
                 number = "even";
+                if (num % 4 == 0) {
+                    number = "Divisible by 4"
+                }
             }
+
             else {
                 number = "odd";
             }
             return number;
         }
 
-             
         let num = prompt("enter number");
         let result = even_odd(num);
         console.log(result);
 
-    
-
+        // function multipleof4(num) {
+        //     if (num % 4 == 0) {
+        //         return "Divisible by 4"
+        //     }
+        // }
+        // let NUM = multipleof4(num)
+        // console.log(NUM)
 
 
     </script>

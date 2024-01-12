@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <script>
+
+        function calculate_age(birthdate) {
+            let years = birthdate.slice('')
+            let months = birthdate.slice('')
+            let days = birthdate.slice('')
+            return days, years, months
+        }
+        let birthdate = prompt("enter birthdate")
+        let age = calculate_age(birthdate)
+
+
+    </script>
+
+
 </body>
+
 </html>

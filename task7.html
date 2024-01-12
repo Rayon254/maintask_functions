@@ -25,12 +25,12 @@
                     marks = "C"
                 } else if (marks < 40 && marks >= 49) {
                     marks = "D"
-                } else (marks <= 40)
-                marks = "E"
+                } else {
+                    marks = "E"
+                }
+                return marks
             }
-            return marks
         }
-
         let marks = prompt("enter marks");
         let student_marks = input_marks(marks);
         console.log(student_marks)
