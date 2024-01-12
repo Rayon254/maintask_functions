@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        function user_input(email, password) {
+            if (email == input_email && password == input_password) {
+                results = "login is Successful"
+            }
+            else {
+                results = "Invalid username or password"
+            }
+            return results
+        }
+        let email = prompt("enter email:")
+        let password = prompt("enter password:")
+        let input_email = "admin@mail.com";
+        let input_password = "Admin@123";
+        let result = user_input(email, password)
+        console.log(results)
+
+
+    </script>
+
+</body>
+
+</html>

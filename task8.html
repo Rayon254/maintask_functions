@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function input_speed(speed) {
+
+            if (speed <= speedlimit) {
+                speed = "Ok";
+
+            } else if (speed > 70 && speed <= 75) {
+                let points = 1;
+                speed = points;
+            } else {
+                points = Math.ceil((speed - speedlimit) / 5);
+                speed = points;
+            }
+            return speed
+
+            if (points>= 12) {
+                speed = "License suspended"
+            }
+            
+        }
+
+        let speed = prompt("enter speed:");
+        let speedlimit = 70;
+        let speed_suspension = 12;
+        let result = input_speed(speed)
+        console.log(result)
+
+    </script>
+
+
+</body>
+
+</html>

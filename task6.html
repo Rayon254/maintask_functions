@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        function input_password(password) {
+
+
+            if (password == "admin@123") {
+                password = "Access Granted";
+
+            } else {
+                password = "Incorrect password";
+
+            }
+            return password
+
+        }
+
+
+        let password = prompt("enter password:");
+        let pass_word = input_password(password)
+        console.log(pass_word)
+
+
+
+        function input_attempts(password) {
+            for (let i = 0; i < 4; i++) {
+
+                if (attempt > 4) {
+                    attempt = "Blocked"
+                }
+                return attempt
+            }
+        }
+
+        let attempt = 0;
+        let attempts = input_attempts(password)
+        console.log(attempts)
+
+    </script>
+
+</body>
+
+</html>

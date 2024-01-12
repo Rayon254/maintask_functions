@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function calc_sum(num1, num2) {
+
+            if (Number.isFinite(num1) && Number.isFinite(num2)) {
+                results = sum
+
+            } else {
+                results = "invalid character entered"
+            }
+            return results
+        }
+
+        let num1 = parseFloat(prompt("enter number1"));
+        let num2 = parseFloat(prompt("enter number2"));
+        let sum = (num1 + num2)
+        let result = calc_sum(num1, num2)
+        console.log(result)
+
+    </script>
+
+
+
+</body>
+
+</html>

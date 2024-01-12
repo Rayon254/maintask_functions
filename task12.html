@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        function input_largest(a, b, c, d) {
+            if (a == b || b == c || c == d || a == c || a == d || b > d) {
+                result = "error";
+            } else
+
+                if (a > b && a > c && a > d) {
+                    result = a;
+                } else if (b > a && b > c && b > d) {
+                    result = b;
+                } else if (c > a && c > b && c > d) {
+                    result = c;
+                } else (d > a && d > b && d > c); {
+                result = d;
+            }
+            return result
+        }
+        let a = prompt("enter number1:");
+        let b = prompt("enter number2:");
+        let c = prompt("enter number3:");
+        let d = prompt("enter number4:");
+        let results = input_largest(a, b, c, d)
+        console.log(results)
+
+
+
+
+    </script>
+
+</body>
+
+</html>
